@@ -12,8 +12,8 @@ import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
 
 
-public class FactoryTest {
-    private final static Logger log = Logger.getLogger(FactoryTest.class.getName());
+public class BaseTest extends WebDriverFactory {
+    private final static Logger log = Logger.getLogger(BaseTest.class.getName());
 
     @Test
 
@@ -31,7 +31,6 @@ public class FactoryTest {
     }
 
     @Test
-
     public void testWithOptions() throws Exception {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
@@ -39,7 +38,7 @@ public class FactoryTest {
 
         String browser = System.getProperty("browser");
 
-        WebDriver wd = WebDriver    .createNewDriver(browser, options);
+        WebDriver wd = WebDriverFactory.createNewDriver(browser, options);
         wd.get("http://www.google.com/");
         wd.quit();
 

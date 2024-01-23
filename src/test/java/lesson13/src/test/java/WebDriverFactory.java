@@ -1,5 +1,6 @@
-//port driver_names.DriverName;
+package lesson13.src.test.java;//port driver_names.DriverName;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import lesson13.src.test.java.driver_names.DriverName;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +10,9 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import static driver_names.DriverName.*;
+import lesson13.src.test.java.driver_names.DriverName.*;
+
+import static lesson13.src.test.java.driver_names.DriverName.*;
 
 
 public class WebDriverFactory {
@@ -25,7 +28,7 @@ public class WebDriverFactory {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver((FirefoxOptions) mc);
         } else if (driverType.toLowerCase().equals(EDGE.name().toLowerCase())) {
-            WebDriverManager.firefoxdriver().setup();
+            WebDriverManager.edgedriver().setup();
             return new EdgeDriver((EdgeOptions) mc);
         }
         throw new Exception("no such driver");
@@ -39,7 +42,7 @@ public class WebDriverFactory {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
         }  else if (driverType.toLowerCase().equals(EDGE.name())) {
-            WebDriverManager.firefoxdriver().setup();
+            WebDriverManager.edgedriver().setup();
             return new EdgeDriver();
         }
         throw new Exception("no such driver");

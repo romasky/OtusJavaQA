@@ -32,6 +32,6 @@ public class OtusDataPicker {
         ((JavascriptExecutor) driver).executeScript(
                 String.format("$('%s').datepicker('setDate', '%s')", cssSelector, date), datePicker);
 
-        WebElement el = driver.findElement(By.cssSelector("#myid"));
+//        WebElement el = driver.findElement(By.cssSelector("#myid"));
     }
 }

@@ -34,7 +34,7 @@ public class OtusScreenshot {
         //Call getScreenshotAs method to create image file
         File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
         //Move image file to new destination
-        File DestFile = new File("/home/svyazemsky/JavaProjects/newqajava/src/test/java/Lesson8/screenshots/" + fileWithPath);
+        File DestFile = new File("/Users/roman/Documents/Storage/Study/Jenkins/OtusJavaQA-master/src/test/java/lesson8/screenshots/" + fileWithPath);
         System.out.println(DestFile);
         //Copy file at destination
         com.google.common.io.Files.copy(SrcFile, DestFile);
