@@ -1,6 +1,6 @@
 package lesson8;
 
-import org.apache.cassandra.io.util.FileUtils;
+
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

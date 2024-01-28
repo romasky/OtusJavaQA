@@ -16,6 +16,7 @@ public class TestBase {
     public void start() {
 
         driver = new FirefoxDriver();
+        driver.manage().window().maximize();
     }
 
     @AfterEach
@@ -24,6 +25,3 @@ public class TestBase {
         //driver = null;
     }
 }
-
-//List<WebElement> links = (List<WebElement>) ((JavascriptExecutor) driver)
-//  .executeScript("return $$('a:contains((WebDriver)')");

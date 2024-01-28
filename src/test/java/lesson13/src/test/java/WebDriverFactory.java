@@ -1,6 +1,5 @@
-package lesson13.src.test.java;//port driver_names.DriverName;
+package lesson13.src.test.java;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import lesson13.src.test.java.driver_names.DriverName;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,8 +8,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
-import lesson13.src.test.java.driver_names.DriverName.*;
 
 import static lesson13.src.test.java.driver_names.DriverName.*;
 

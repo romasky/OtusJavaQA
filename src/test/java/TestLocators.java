@@ -11,8 +11,15 @@ public class TestLocators extends TestBase {
     public void myFirstTest() {
         driver.navigate().to("https://otus.ru/");
 
-        WebElement link = driver.findElement(By.linkText("learning/"));
+       /* By.linkText - это метод в Selenium WebDriver, который используется для нахождения элементов по текстовому
+         содержимому ссылки. Он ищет элементы по точному совпадению текста ссылки. */
+        WebElement link = driver.findElement(By.linkText("О нас"));
         link.click();
+
+        /* By.tagName выполняет поиск на веб-странице первого элемента с тегом <select> и возвращает его в
+        качестве объекта типа WebElement.  Этот метод часто используется при автоматизации тестирования веб-приложений
+        для нахождения выпадающих списков (тег <select>) на странице и взаимодействия с ними,
+        таким образом, позволяя выбирать опции в таких списках. */
 
         WebElement form2 = driver.findElement(By.tagName("select"));
         form2.click();
