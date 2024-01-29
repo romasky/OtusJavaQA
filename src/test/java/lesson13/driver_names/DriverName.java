@@ -1,4 +1,4 @@
-package lesson13.src.test.java.driver_names;
+package lesson13.driver_names;
 
 public enum DriverName {
     CHROME ("chrome"),

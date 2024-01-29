@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-public class AlertExample {
+public class TestAlertExample {
 
     public WebDriver driver;
     public WebDriverWait wait;

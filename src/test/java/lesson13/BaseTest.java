@@ -1,4 +1,4 @@
-package lesson13.src.test.java;
+package lesson13;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;

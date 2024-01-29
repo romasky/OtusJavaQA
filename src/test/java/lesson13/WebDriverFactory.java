@@ -1,4 +1,4 @@
-package lesson13.src.test.java;
+package lesson13;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import static lesson13.src.test.java.driver_names.DriverName.*;
+import static lesson13.driver_names.DriverName.*;
 
 
 public class WebDriverFactory {

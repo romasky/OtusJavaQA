@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class OtusDataPicker {
+public class TestOtusDataPicker {
 
     @Test
     public void testOtusTakeScreenshot() {
